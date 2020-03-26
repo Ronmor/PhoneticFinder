@@ -9,7 +9,7 @@ using namespace std;
 namespace phonetic{
 
 int someBodySucksAtHisJob(char t, char w){
-
+        /*
     t = tolower(t);
     w = tolower(w);
     if((t=='w'&& w=='v')||(t=='v' && w=='w'))
@@ -38,12 +38,12 @@ int someBodySucksAtHisJob(char t, char w){
         return 1;
     if((t=='i'&& w=='y')||(t=='y' && w=='i'))
         return 1;
-      
+      */
     return 0;
 }
 
 string find(string text ,string currentword){
-    
+    /*
     string eureka ;
     int index=0, i=0;
         if(currentword == "" || currentword ==" "){
@@ -80,7 +80,7 @@ string find(string text ,string currentword){
         throw string("There is no such word in this message");
         break;
     }
-    
+    */
     return "----The End----";
     
 }
