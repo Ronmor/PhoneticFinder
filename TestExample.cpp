@@ -4,9 +4,9 @@
  * 
  * IMPORTANT: Please write more tests - the tests here are only for example and are not complete.
  *
- * AUTHORS: <Please write your names here>
+ * AUTHORS: Ron and Alex
  * 
- * Date: 2020-02
+ * Date: 2020-03
  */
 
 #include "doctest.h"
@@ -16,24 +16,6 @@ using namespace phonetic;
 using namespace std;
 
 
-
-TEST_CASE("Test replacement of p and b") {
-    string text = "xxx happy yyy";
-    CHECK(find(text, "happy") == string("happy"));
-    CHECK(find(text, "habby") == string("happy"));
-    CHECK(find(text, "hapby") == string("happy"));
-    CHECK(find(text, "habpy") == string("happy"));
-    /* Add more checks here */
-}
-
-TEST_CASE("Test replacement of lower-case and upper-case") {
-    string text = "Happi xxx yyy";
-    CHECK(find(text, "happi") == string("Happi"));
-    CHECK(find(text, "Happi") == string("Happi"));
-    CHECK(find(text, "HAPPI") == string("Happi"));
-    CHECK(find(text, "HaPpI") == string("Happi"));
-    /* Add more checks here */
-}
 
 TEST_CASE("Dond vorri be haffy") {
     string text = "Dond vorri be haffy";
