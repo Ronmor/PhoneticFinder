@@ -1,15 +1,12 @@
-#include <iostream>
-//#include <string.h>
-#include <string>
 #include "PhoneticFinder.hpp"
+#include <iostream>
 
 using namespace std;
-
 
 namespace phonetic{
 
 int someBodySucksAtHisJob(char t, char w){
-        /*
+     /*   
     t = tolower(t);
     w = tolower(w);
     if((t=='w'&& w=='v')||(t=='v' && w=='w'))
@@ -42,9 +39,9 @@ int someBodySucksAtHisJob(char t, char w){
     return 0;
 }
 
-string find(string text ,string currentword){
+std::string find(std::string text ,std::string currentword){
     /*
-    string eureka ;
+    string eureka = "" ;
     int index=0, i=0;
         if(currentword == "" || currentword ==" "){
             throw string("Sorry, what are you looking for again?");
@@ -54,16 +51,18 @@ string find(string text ,string currentword){
             eureka += text[i];
             i++;
             index++;
-        }else{
-            if(someBodySucksAtHisJob(text[i], currentword[i])){
+        }
+        else
+        {
+            if(phonetic::someBodySucksAtHisJob(text[i], currentword[i]))
+            {
                 eureka += text[i];
                 i++;
                 index++;
             }
             else{
-                eureka.clear();
-                index=0;
-                 
+                eureka = "";
+                index=0;                 
                 while(text[i] ==' '){
                     i++;
                 }
@@ -85,3 +84,4 @@ string find(string text ,string currentword){
     
 }
 }
+

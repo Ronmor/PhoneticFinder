@@ -5,8 +5,8 @@
  */
 
 #include "PhoneticFinder.hpp"
-#include <iostream>
 #include <stdexcept>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -20,4 +20,6 @@ int main() {
 	} catch (exception& ex) {
 	 	cout << "   caught exception: " << ex.what() << endl;  // should print "Did not find the word 'happ' in the text"
 	}
+
+	return 0;
 }

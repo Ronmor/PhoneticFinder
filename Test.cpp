@@ -1,6 +1,7 @@
 #include "doctest.h"
 #include "PhoneticFinder.hpp"
 #include <string>
+#include <stdexcept>
 using namespace phonetic;
 using namespace std;
 

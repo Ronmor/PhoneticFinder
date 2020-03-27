@@ -1,8 +1,7 @@
 #pragma once
 #include <string>
 
-using namespace std;
 namespace phonetic {
-    string find(string text ,string word);
+    std::string find(std::string text ,std::string word);
     int someBodySucksAtHisJob(char t, char w);
 }
